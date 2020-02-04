@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Wasel\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Wasel\\.nuget\\packages"
+    ]
+  }
+}
