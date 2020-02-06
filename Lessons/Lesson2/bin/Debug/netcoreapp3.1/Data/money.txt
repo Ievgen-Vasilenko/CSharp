@@ -1,0 +1,9 @@
+
+
+
+
+
+Your income: 1311
+Your expense: 446
+Your balance: 865
+Congratulations! You are in the black.
