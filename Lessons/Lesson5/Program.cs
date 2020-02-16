@@ -8,8 +8,15 @@ namespace Lesson5
         {
             Console.Write("Enter file path: ");
             string filePath = Console.ReadLine();
-
-            ContactManager cm = new ContactManager(filePath);
+            ContactManager cm = new ContactManager();
+            try {
+                cm.ReadFromFile(filePath);
+            }
+            catch(BusinessLogicExeption ex)
+            {
+                Console.WriteLine(ex.BusinessLogicMessage);
+            }
+            
             Console.WriteLine("Entries:");
             foreach(ContactEntry ce in cm.Entries)
             {
@@ -17,6 +24,7 @@ namespace Lesson5
             }
 
             Console.WriteLine();
+            Console.WriteLine(cm.Log);
             Console.ReadKey();
         }
     }

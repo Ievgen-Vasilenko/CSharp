@@ -9,6 +9,7 @@ namespace Lesson5
     {
         private List<ContactEntry> _entries;
         private string _filePath;
+        private string _log;
 
         public ContactManager()
         {
@@ -24,26 +25,44 @@ namespace Lesson5
 
         public bool ReadFromFile(string filePath)
         {
+            bool retVal = true;
             _filePath = filePath;
             if (!File.Exists(filePath))
+            {
+                _log += string.Format("{0}\n", "File not found.");
                 return false;
+            }
+                
             StreamReader sr = File.OpenText(_filePath);
             while (!sr.EndOfStream)
             {
-                this.AddEntryFromFileLine(sr.ReadLine());
+                bool result = this.AddEntryFromFileLine(sr.ReadLine());
+                if (!result)
+                    retVal = false;
             }
-            return true;
+            return retVal;
         }
 
-        private void AddEntryFromFileLine(string line)
+        private bool AddEntryFromFileLine(string line)
         {
             string[] fields = line.Split('|');
-            ContactEntry ce = new ContactEntry();
-            ce.LastName = fields[0];
-            ce.FirstName = fields[1];
-            ce.PhoneNumber = fields[2];
-            ce.Email = fields[3];
-            _entries.Add(ce);
+            try {
+                ContactEntry ce = new ContactEntry();
+                ce.LastName = fields[0];
+                ce.FirstName = fields[1];
+                ce.PhoneNumber = fields[2];
+                ce.Email = fields[3];
+
+                _entries.Add(ce);
+            }
+            catch(Exception ex)
+            {
+                BusinessLogicExeption blex = new BusinessLogicExeption();
+                blex.BusinessLogicMessage = "Index out of range";
+                throw blex;
+            }
+
+            return true;
         }
 
         public void AddEntry(ContactEntry contact)
@@ -90,5 +109,16 @@ namespace Lesson5
         {
             get { return _entries.AsReadOnly(); }
         }
+
+        public string Log
+        {
+           get{ return _log; }
+        }
+
+    }
+
+    public class BusinessLogicExeption : Exception
+    {
+        public string BusinessLogicMessage { get; set; }
     }
 }
