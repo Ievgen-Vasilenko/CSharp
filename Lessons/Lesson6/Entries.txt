@@ -1,0 +1,3 @@
+﻿debit|100|11.11.2010|Record Description|Products
+credit|50|10.11.2010|Record Description|Auto
+debit|100|12.11.2010|Record Description|Entertainment
