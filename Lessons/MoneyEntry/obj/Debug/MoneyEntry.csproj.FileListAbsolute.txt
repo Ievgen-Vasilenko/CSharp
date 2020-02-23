@@ -1,0 +1,5 @@
+C:\Users\Wasel\Desktop\CSharp\Lessons\MoneyEntry\bin\Debug\MoneyEntry.dll
+C:\Users\Wasel\Desktop\CSharp\Lessons\MoneyEntry\bin\Debug\MoneyEntry.pdb
+C:\Users\Wasel\Desktop\CSharp\Lessons\MoneyEntry\obj\Debug\MoneyEntry.dll
+C:\Users\Wasel\Desktop\CSharp\Lessons\MoneyEntry\obj\Debug\MoneyEntry.pdb
+C:\Users\Wasel\Desktop\CSharp\Lessons\MoneyEntry\obj\Debug\MoneyEntry.csprojAssemblyReference.cache

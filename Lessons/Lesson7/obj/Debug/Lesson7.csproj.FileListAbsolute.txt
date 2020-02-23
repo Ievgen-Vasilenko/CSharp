@@ -1,0 +1,12 @@
+C:\Users\Wasel\Desktop\CSharp\Lessons\Lesson7\bin\Debug\Lesson7.exe.config
+C:\Users\Wasel\Desktop\CSharp\Lessons\Lesson7\bin\Debug\Lesson7.exe
+C:\Users\Wasel\Desktop\CSharp\Lessons\Lesson7\bin\Debug\Lesson7.pdb
+C:\Users\Wasel\Desktop\CSharp\Lessons\Lesson7\obj\Debug\Lesson7.Form1.resources
+C:\Users\Wasel\Desktop\CSharp\Lessons\Lesson7\obj\Debug\Lesson7.Properties.Resources.resources
+C:\Users\Wasel\Desktop\CSharp\Lessons\Lesson7\obj\Debug\Lesson7.csproj.GenerateResource.cache
+C:\Users\Wasel\Desktop\CSharp\Lessons\Lesson7\obj\Debug\Lesson7.exe
+C:\Users\Wasel\Desktop\CSharp\Lessons\Lesson7\obj\Debug\Lesson7.pdb
+C:\Users\Wasel\Desktop\CSharp\Lessons\Lesson7\bin\Debug\MoneyEntry.dll
+C:\Users\Wasel\Desktop\CSharp\Lessons\Lesson7\bin\Debug\MoneyEntry.pdb
+C:\Users\Wasel\Desktop\CSharp\Lessons\Lesson7\obj\Debug\Lesson7.csprojAssemblyReference.cache
+C:\Users\Wasel\Desktop\CSharp\Lessons\Lesson7\obj\Debug\Lesson7.csproj.CopyComplete
